@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  color: #333;
+}
+header {
+  background-color: #c5882b;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 10px solid black;
+}
+
+nav {
+  text-align: center;
+  background-color: #333;
+  border-bottom: 10px solid black;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #575757;
+}
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+#menunadpis {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  background-color: rgba(143, 104, 31, 0.705);
+  color: white;
+  border: 5px solid black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#polevky {
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: rgba(182, 121, 41, 0.712);
+  border: 5px solid black;
+}
+#hlavni {
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: rgba(182, 121, 41, 0.712);
+  border: 5px solid black;
+}
+#dezerty {
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: rgba(182, 121, 41, 0.712);
+  border: 5px solid black;
+}
+#mapa {
+  text-align: center;
+}
+#menu-container {
+  background-image: url(https://hotelsoyka.astenhotels.com/files/responsive/2600/0/restaurace-soyka-menu-podzim-2024-web-5.jpg);
+  padding: 100px;
+}
+#uvod-container {
+  background-image: url(https://hotelsoyka.astenhotels.com/files/responsive/2600/0/restaurace-soyka-menu-podzim-2024-web-32.jpg);
+  padding: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "uvod- uvod-"
+    "menuodkaz kontaktodkaz";
+  #uvod {
+    grid-area: uvod-;
+  }
+  #menuodkaz {
+    grid-area: menuodkaz;
+  }
+  #kontaktodkaz {
+    grid-area: kontaktodkaz;
+  }
+}
+#menuodkaz {
+  background-color: rgba(182, 121, 41, 0.712);
+  color: white;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: center;
+}
+#menuodkaz a {
+  color: inherit;
+  text-decoration: none;
+}
+#menuodkaz a:hover {
+  background-color: rgba(185, 185, 185, 0.623);
+}
+#kontaktodkaz {
+  background-color: rgba(182, 121, 41, 0.712);
+  color: white;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: center;
+}
+#kontaktodkaz a {
+  color: inherit;
+  text-decoration: none;
+}
+#kontaktodkaz a:hover {
+  background-color: rgba(185, 185, 185, 0.623);
+}
+#uvod {
+  background-color: rgba(182, 121, 41, 0.712);
+  color: white;
+  margin-top: 0px;
+  font-size: 20px;
+}
+#fotky {
+  height: 300px;
+  width: 780px;
+  background-color: rgba(204, 147, 42, 0.658);
+  margin-left: 500px;
+  margin-right: 100px;
+  padding: 30px;
+  padding-top: 70px;
+  display: grid;
+  border: 5px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img1 img2 img3";
+  #img1 {
+    width: 100%;
+    grid-area: img1;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+  }
+  #img2 {
+    width: 100%;
+    grid-area: img2;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+  }
+  #img3 {
+    width: 100%;
+    grid-area: img3;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+  }
+}
